@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::redirect('/', '/admin');
+Route::redirect('/dashboard', '/admin');
+/* Route::get('/', function () {
     return view('welcome');
-});
+}); */
